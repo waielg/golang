@@ -23,4 +23,16 @@ Mod2
 - modulus remainder: %, Boolean (bool) = true or false]
 -       && = and, || = or, ! = not
 - String: sequence of bytes, length = len, cannot change a string
+- - Constants cannot be changed (integers, strings, etc.)
+  - Sample code:
+package main
+import(
+"fmt"
+)
+func main() {
+      const pi = 3.13
+      fmt.Println(math.pi)
+      }
+- 
+
 
