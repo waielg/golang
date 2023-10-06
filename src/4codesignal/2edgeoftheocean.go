@@ -1,12 +1,13 @@
 package main
 
+/*
 import "fmt"
 
-func main() {
+func main3() {
 	fmt.Println()
 }
 
-func largestproduct(inputArray []int) int {
+func largestproduct2(inputArray []int) int {
 	//define max
 	max := inputArray[0] * inputArray[1]
 
@@ -19,7 +20,7 @@ func largestproduct(inputArray []int) int {
 	return max
 }
 
-func additionalstatues(statues []int) int {
+func additionalstatues2(statues []int) int {
 	min := statues[0]
 	max := statues[0]
 
@@ -35,7 +36,7 @@ func additionalstatues(statues []int) int {
 	return (max - min + 1) - len(statues)
 }
 
-func removeoneintstrictlyincreasing(sequence []int) bool {
+func removeoneintstrictlyincreasing2(sequence []int) bool {
 	removed := false
 	j := 0
 	for i := 1; i < len(sequence); i++ {
@@ -57,7 +58,7 @@ func removeoneintstrictlyincreasing(sequence []int) bool {
 	return true
 }
 
-func matrixghostgame(matrix [][]int) int {
+func matrixghostgame2(matrix [][]int) int {
 
 	sum := 0
 	for x := 0; x < len(matrix[0]); x++ {
@@ -68,3 +69,5 @@ func matrixghostgame(matrix [][]int) int {
 
 	return sum
 }
+
+*/

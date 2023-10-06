@@ -1,5 +1,6 @@
 package main
 
+/*
 import (
 	"bufio"
 	"fmt"
@@ -14,8 +15,9 @@ import (
  *
  * The function is expected to return an INTEGER.
  * The function accepts STRING s as parameter.
- */
+*/
 
+/*
 func sherlockAndAnagrams(s string) int32 {
     // Write your code here
 	return 5
@@ -60,3 +62,5 @@ func checkError(err error) {
         panic(err)
     }
 }
+
+*/

@@ -1,3 +1,4 @@
+# My Maarkdown
 
 ## Sept 29
 ## Q1
@@ -25,4 +26,22 @@ For a = [10, 2], the output should be solution(a) = 1344.
 a[0] ∘ a[0] = 10 ∘ 10 = 1010,
 a[0] ∘ a[1] = 10 ∘ 2 = 102,
 a[1] ∘ a[0] = 2 ∘ 10 = 210,
-a[1] ∘ a[1] = 2 ∘ 2 = 22.
+a[1] ∘ a[1] = 2 ∘ 2 = 22.//	var sum int64 = 4
+	n := len(a)
+	// nested for loop
+	for i :=0 ; i<n; i++ {
+		for j := 0; j<n; j++ {
+			if i != j {
+				tempsum := int64(a[i])
+				attach := int64(a[j])
+				for attach > 0 {
+					tempsum *= 10
+					attach /= 10
+				}
+			attach += int64(a[j])
+			sum += tempsum
+			}
+		}
+	}
+	return sum
+	}

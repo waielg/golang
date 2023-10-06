@@ -1,5 +1,6 @@
 package main
 
+/*
 import "fmt"
 
 // A list of different functinns
@@ -87,3 +88,4 @@ func matrixghostgame(matrix [][]int) int {
 func main() {
 	fmt.Println("Hello, World im Waiel", palindrome("car"))
 }
+*/
