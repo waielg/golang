@@ -39,5 +39,6 @@ func main() {
 	fmt.Println("Hello World")
 	fmt.Println(sumgbt(646, 6476))
 	fmt.Println(factorial(4))
+	fmt.Println(primecheck(44))
 
 }

@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 	"sync"
-
 	"github.com/gorilla/mux"
 )
 
@@ -51,7 +50,7 @@ func GetHandler(w http.ResponseWriter, r *http.Request) {
 // PostHandler responds to POST requests on the /post route by storing the received data
 func PostHandler(w http.ResponseWriter, r *http.Request) {
 	// Read the request body
-	body, err := ioutil.ReadAll(r.Body)
+	body, err := io.ReadAll(r.Body)
 	// if there is an error return an internal server error
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -70,4 +69,4 @@ func PostHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Data received and stored")
 }
 
-// curl -I http://localhost:8085/healthcheck
+// curl -I http://localhost:8085/health

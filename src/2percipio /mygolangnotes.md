@@ -64,15 +64,20 @@ Mod2
 - ARRAYS ex.2
       package main
       import "fmt"
-      func main() {
-      var twoDimArr [3][2]int
-      for i:=0; i<3; i++ {
-            for j:=0; j<2; j++ {
-                  twoDimArr[i][j] = i + j
-            }
-      }
-      fmt.Println("two dimensional array values:", twoDimArr
-      }
+     func main() {
+    // Define a two-dimensional array with 3 rows and 2 columns.
+ 
+
+    // Use nested loops to initialize the array.
+    for i := 0; i < 3; i++ {
+        for j := 0; j < 2; j++ {
+
+        }
+    }
+
+    // Print the two-dimensional array values.
+    fmt.Println("two-dimensional array values:", twoDimArr)
+}
 
 - SLICES ex.
       package main

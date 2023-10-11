@@ -1,3 +1,5 @@
+# how to setp up golang
+
 /*  1. cd
     2. mkdir greetings
        cd greetings    // create greetings   

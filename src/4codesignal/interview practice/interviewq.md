@@ -1,4 +1,4 @@
-# My Maarkdown
+# My Markdown
 
 ## Sept 29
 ## Q1
@@ -27,21 +27,37 @@ a[0] ∘ a[0] = 10 ∘ 10 = 1010,
 a[0] ∘ a[1] = 10 ∘ 2 = 102,
 a[1] ∘ a[0] = 2 ∘ 10 = 210,
 a[1] ∘ a[1] = 2 ∘ 2 = 22.//	var sum int64 = 4
-	n := len(a)
-	// nested for loop
-	for i :=0 ; i<n; i++ {
-		for j := 0; j<n; j++ {
-			if i != j {
-				tempsum := int64(a[i])
-				attach := int64(a[j])
-				for attach > 0 {
-					tempsum *= 10
-					attach /= 10
-				}
-			attach += int64(a[j])
-			sum += tempsum
-			}
-		}
-	}
-	return sum
-	}
+
+
+
+
+## Oct 6
+
+Q1
+You are given two strings - pattern and source. The first string pattern contains only the symbols 0 and 1, and the second string source contains only lowercase English letters.
+
+Let's say that pattern matches a substring source[l..r] of source if the following three conditions are met:
+
+they have equal length,
+for each 0 in pattern the corresponding letter in the substring is a vowel,
+for each 1 in pattern the corresponding letter is a consonant.
+Your task is to calculate the number of substrings of source that match pattern.
+
+Note: In this task we define the vowels as 'a', 'e', 'i', 'o', 'u', and 'y'. All other letters are consonants.
+
+
+Q2
+A sawtooth sequence is a sequence of numbers that alternate between increasing and decreasing. In other words, each element is either strictly greater than its neighbouring elements or strictly less than its neighbouring elements.
+
+Given an array of integers arr, your task is to count the number of contiguous subarrays that represent a sawtooth sequence of at least two elements.
+
+Example:
+
+For arr = [9, 8, 7, 6, 5], the output should be solution(arr) = 4.
+Since all the elements are arranged in decreasing order, it won't be possible to form any sawtooth subarrays of length 3 or more. There are 4 possible subarrays containing two elements, so the answer is 4.
+
+For arr = [10, 10, 10], the output should be solution(arr) = 0.
+Since all of the elements are equal, none of subarrays can be sawtooth, so the answer is 0.
+
+For arr = [1, 2, 1, 2, 1], the output should be solution(arr) = 10.
+All contiguous subarrays containing at least two elements satisfy the condition of problem. There are 10 possible contiguous subarrays containing at least two elements, so the answer is 10.
